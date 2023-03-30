@@ -11,15 +11,18 @@ function Home() {
     });
   }, []);
   return (
-    <main>
-      <section className="feed">
-        <ul>
-          {data.map((country, index) => (
-            <PostCard key={index} country={country} />
-          ))}
-        </ul>
-      </section>
-    </main>
+    <>
+      <header><h1>File d'actualité</h1></header>
+      <main>
+        <section className="feed">
+          <ul>
+            {data.map((country, index) => (
+              <PostCard key={index} country={country} />
+            ))}
+          </ul>
+        </section>
+      </main>
+    </>
   );
 }
 

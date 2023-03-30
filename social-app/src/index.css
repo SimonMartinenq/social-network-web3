@@ -11,19 +11,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.active {
-  border-bottom: solid 4px #7DC2A5;
+h1{
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.feed {
-  max-width: 600px;
-  width: 100%;
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  border-bottom: solid 4px #7DC2A5;
 }
 
 main {
   display: flex;
   justify-content: center;
   background-color: #7DC2A54A;
+  width: 70vw;
 }
 
 .postCard {
@@ -34,15 +40,65 @@ main {
 }
 
 .navBar {
-  background-color: #fffffff5;
+  background-color: #fffdfdf0;
   position: sticky;
-  top: 0;
-  height: 60px;
+  top:50px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: max-content;
 }
 
-.logo{
-  width:60px
+.logo {
+  width: 60px;
+}
+
+.message {
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  background-color: white;
+  margin: 10px;
+  width: 60%;
+}
+
+.sent {
+  border-bottom-right-radius: 4px;
+  align-self: flex-end;
+}
+
+.received {
+  border-bottom-left-radius: 4px;
+  align-self: flex-start;
+
+}
+
+.listMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputMessage {
+  width: 100%;
+  padding: 10px 15px 10px 15px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.inputMessage:focus {
+  outline: none;
+}
+
+.buttonSend {
+  padding: 10px 15px 10px 15px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background: white;
+}
+
+header {
+  padding: 30px;
+  background-color: #fffdfdf0;
+  position: sticky;
+  top: 0;
+  text-align: center;
 }

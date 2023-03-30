@@ -1,9 +1,14 @@
 function Settings() {
   return (
-    <div className="">
-      <h1>Settings </h1>
-      <h2>Coucocu</h2>
-    </div>
+    <>
+      <header>
+        <h1>Règlages</h1>
+      </header>
+      <main className="">
+        <h1>Settings </h1>
+        <h2>Coucocu</h2>
+      </main>
+    </>
   );
 }
 
